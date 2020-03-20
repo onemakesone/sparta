@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <!-- Webpage Title -->
+     <title>WHT store!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet">
+
+    
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+    function buttonclick(){
+            let text=$('#address').val();
+            if (text==''){
+                alert('입력하세요!');
+            }
+            
+    } 
+    </script>
+    
+    
+    <style>
+        
+    .flex-container {
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+        .wrap{
+            font-family: 'Archivo', sans-serif;
+        }
+   
+        .center>p{
+            color:orangered;
+            font-size:13px;
+            margin-bottom:3px;
+        }
+     
+    
+    * {box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Archivo',sans-serif;
+    } 
+
+    .mytitle{
+        font-size:15px;
+        text-align:center;
+        padding:10px;
+   }
+
+    a{
+        color:black;
+        text-decoration:none;
+    }
+    a:hover{
+        color:orangered;
+        text-decoration:none;
+    }  
+
+
+    .navbar{
+        display:flex;
+        background-color:white;
+        width:100%
+    }
+
+   .navbar a{
+        padding:12px;
+        color:orangered;
+        text-decoration:none;
+        font-size:17px;
+        text-align:center;
+        width:33%;
+    }
+    .navbar a:hover{
+        background-color:white;
+    }
+    .navbar a.active{
+        text-decoration:underline;
+        background-color:white;
+     }
+   
+   
+   .row{
+       display:flex;
+       flex-wrap:wrap;
+   }
+
+   .product{
+     
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        width:100%;
+   }
+   @media screen and (max-width: 768px) {
+        .product {
+            align-items: center;
+        }   
+    }
+
+    .orderinfo{
+        flex:40%;
+        text-align:left;
+        
+    }
+    @media screen and (max-width: 768px) {
+        .orderinfo {
+             text-align: center;
+        }   
+    }
+
+       
+    
+    
+    
+    .info{
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    .info>h3{
+        margin:7px auto 10px auto;
+        color:black;
+        
+    }
+    .info>p{
+        margin:20px auto 60px auto;
+    }
+    
+    @media screen and (max-width: 768px) {
+       .info {
+             text-align: center;
+        }   
+    }
+
+    .inputandbutton{
+        text-align: center;
+    }
+    input[type="text"]{
+        color:orangered;
+        font-size:20px;
+        padding:10px;
+        border: none;
+        border-bottom:solid 1px orangered;
+        width:70%;
+        margin:5px auto;
+    }
+    .option{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .option {
+            align-items: center;
+            
+        }   
+    }
+    .Quantity {
+        margin: 15px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        border-style: solid;
+        border-width: 0;
+        color: white;
+    }
+    .Quantity >button {
+        margin: 15px;
+        width: 35px;
+        height: 35px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        color: orangered;
+        background-color: transparent;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    #count {
+        width: 30px;
+        margin:auto;
+        font-size: 20px;
+        background-color: transparent;
+        color: black;
+        border:none;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+        .Quantity {
+            margin-top: 25px;
+            
+        }   
+    }
+    .orderinfo >button {
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 15px;
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        background-color: black;
+        color:white;
+    }
+    @media screen and (max-width: 768px) {
+        .orderinfo >button {
+            align-items:center;
+        } 
+    }
+     </style>
+
+    
+    </head>
+ <body>
+   <div class="flex-container">
+        
+        <div class="mytitle">
+            <h1><a href="new_shoppingmall(how).html" >WHAT HAPPENED TODAY</a></h1>
+        </div>
+
+        <div class="navbar">
+            <a class="active" href="new_shoppingmall(homework).html">FIRST</a>
+            <a  href="new_shoppingmall(homework).html">SECOND</a>
+            <a  href="new_shoppingmall(homework).html">THIRD</a>
+        </div>   
+
+
+     <div class="row">
+        <div class="product">
+            <img src="umbrella.png" >
+        </div> 
+    </div>
+  
+        <div class ="orderinfo">
+            <div class="info">
+                
+                <h3>WHT umbrella</h3>
+                <p>32,900won</p>
+             </div>
+               
+                    <div class="option">
+                        <input type="text" id="address" name="address" placeholder="address" ><br>
+                        <input type="text" id="phone" name="phone" placeholder="phone"><br>
+                
+                        <div class="Quantity">
+                            <button id="minus" type="button" onclick="sub()">-</button>
+                            <input type="text" id="count" value="1"></input>
+                            <button id="plus" type="button" onclick="add()">+</button>
+                        </div>
+                        <button type="button" onclick="buttonclick()">
+                            <strong>
+                                <div>Order</div>
+                            </strong>
+                        </button> 
+                    </div>
+              
+            </div>
+    
+  
+        </div>
+        </div>
+</div>
+</div>
+    </body>
+</html>
